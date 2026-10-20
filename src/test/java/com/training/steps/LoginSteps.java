@@ -34,7 +34,7 @@ public class LoginSteps {
  
  @Given("user opens SauceDemo login page")
  public void user_opens_sauce_demo_login_page() {
-     driver = new ChromeDriver();
+      driver = DriverFactory.getDriver();
      driver.manage().window().maximize();
      driver.get("https://www.saucedemo.com/");
  }
