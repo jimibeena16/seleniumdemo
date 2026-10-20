@@ -15,7 +15,7 @@ public class dropdown {
 		
 		driver.get("https://demoqa.com/select-menu");
 		
-		Select select = new Select(driver.findElement(By.id("oldSelectMenu1")));
+		Select select = new Select(driver.findElement(By.id("oldSelectMenu")));
 		//Select by visible text
 		select.selectByVisibleText("Green");
 		//By value
