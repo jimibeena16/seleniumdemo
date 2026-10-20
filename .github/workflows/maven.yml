@@ -25,11 +25,6 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Delete Old Reports
-        run: |
-          rm -rf test-output
-          rm -rf target
-
       - name: Build and Execute Tests
         run: mvn clean install -U
 
