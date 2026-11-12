@@ -8,7 +8,9 @@ public class TestNGParameters {
 	 @Parameters({"username", "password"})
 	    @Test(groups = {"smoke"})
 	    public void login(String username, String password) {
-
+            @Optional("defaultUser") String username,
+            @Optional("defaultPass") String password) {
+				
 	        System.out.println("Username: " + username);
 	        System.out.println("Password: " + password);
 
