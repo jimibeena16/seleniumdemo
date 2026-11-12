@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Suite" verbose="0">
+    <parameter name="username" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
+
+     <test name="All TestNG Tests">
+
+        <packages>
+            <package name="testNGtests"/>
+         </packages>
+
+    </test>
+</suite>
